@@ -20,10 +20,15 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div>
 
+  </div>
   <div class="container">
     <header>
       <a href="#" class="logo">
@@ -36,17 +41,19 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Facilities</a></li>
-          <li><a href="#">More</a></li>
+          <li><a href="#">More</a><img src="./img/flecha.svg" alt="Mas"></li>
         </ul>
       </nav>
 
       <aside>
-        <ul>
-          <li><a href="#"><img src="./img/Search.svg" alt="Search"></a></li>
-          <li><a href="#"><img src="./img/Shopping Bag.svg" alt="Shopping Bag"></a></li>
-          <li><a href="#">Sign In</a></li>
-          <li><a href="#">Sign up</a></li>
-        </ul>
+        <div class="iconos">
+          <a href="#"><img src="./img/Search.svg" alt="Search"></a>
+          <a href="#"><img src="./img/Shopping Bag.svg" alt="Shopping Bag"></a>
+        </div>
+        <div class="registro">
+          <a href="#">Sign In</a>
+          <a href="#" class="btn-signup">Sign Up</a>
+        </div>
       </aside>
     </header>
 
@@ -56,36 +63,42 @@
         <p>We provide you various tratments from head to toe using the best product, advanced technology, and affordable price</p>
         <div>
           <a href="#" class="btn">Book now</a>
-          <a href="#" class="btn"><img src="./img/iconPlay.svg" alt="Explore">Watch Video</a>
+          <a href="#" class="btn"><img src="./img/Play.svg" alt="Explore">Watch Video</a>
         </div>
       </div>
       <div class="caracteristicas">
         <div>
           <img src="./img/iconPerson.svg" alt="Person">
-          <h4>14 +</h4>
-          <p>Especial Treatment</p>
+          <div class="info">
+            <h3>15+</h3>
+            <p>Especial Treatment</p>
+          </div>
         </div>
         <div>
           <img src="./img/iconFlower.svg" alt="Flower">
-          <h4>25 +</h4>
-          <p>Professional Therapist</p>
+          <div class="info">
+            <h3>25+</h3>
+            <p>Professional Therapist</p>
+          </div>
         </div>
         <div>
           <img src="./img/iconHerbal.svg" alt="Herbal">
-          <h4>100%</h4>
-          <p>Herbal Cream Formula</p>
+          <div class="info">
+            <h3>100%</h3>
+            <p>Herbal Cream Formula</p>
+          </div>
         </div>
       </div>
       <div class="comentarios">
         <div>
-          <span class="comillas">“</span>
+          <img src="./img/comillas.svg" alt="Comillas">
           <p>I have a regular schedule to take treatment from GlowQueen. they gave me the best service and treatment ever to maintain the beauty and health of my skin</p>
-          <p class="name">Sophia Princeton</p>
+          <h4>Sophia Princeton</h4>
         </div>
         <div>
-          <span class="comillas">“</span>
+          <img src="./img/comillas.svg" alt="Comillas">
           <p>For the past few years, I've had a hard time finding the right place for skin care to deal with my complicated skin condition, thank God I found Glow Queen to treat my skin</p>
-          <p class="name">Tamara Jules</p>
+          <h4>Tamara Jules</h4>
         </div>
       </div>
     </section>

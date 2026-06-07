@@ -250,3 +250,204 @@ textarea {
 *Aqui empieza el proyecto
 */
 
+:root {
+  --dark-blue: rgba(38, 64, 101, 1);
+  --gray: rgba(250, 248, 245, 1);
+  --gray2: rgba(144, 144, 144, 1);
+  --white: #F5F5F5;
+  --black: rgba(0, 0, 0, 1);
+  --cyan: rgba(169, 214, 203, 1);
+  --poppins-regular: "Poppins", sans-serif;
+  --nunito-sans: "Nunito Sans", sans-serif;
+  --white-blur: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  font-family: var(--poppins-regular);
+  background-image: 
+    url('../img/fondo-mujer.png'),
+    url('../img/spaLogo.svg'),
+    linear-gradient(to right, var(--gray) 65%, var(--cyan) 35%);
+  background-position: 300px -10px, 1172.25px 108.5px, 0 0;
+  background-size: 1650px 1150px, 472.5px 436.6px, 100% 820px;
+  background-repeat: no-repeat, no-repeat, no-repeat; 
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 0px; 
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+header aside {
+  display: flex;
+  align-items: center;
+  gap: 66px; 
+}
+
+header aside .iconos {
+  display: flex;
+  gap: 32px; 
+}
+
+header aside .registro {
+  display: flex;
+  align-items: center;
+  gap: 32px; 
+}
+
+header aside .registro a+a {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  text-decoration: none;
+  padding: 16px 40px;
+  border-radius: 32px;
+}
+
+.hero{
+  display: relative;
+}
+
+.hero .descripcion{
+  width: 809px;
+  margin-bottom: 90px;
+}
+
+.hero .descripcion h1{
+  font-size: 64px;
+  color: var(--dark-blue);
+}
+
+.hero .descripcion p{
+  font-size: 24px;
+  color: var(--gray2);
+}
+
+.hero .descripcion div{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero .descripcion a:first-child {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  padding: 16px 40px;
+  border-radius: 32px;
+}
+
+.hero .descripcion div a:last-child {
+  display: flex;
+  align-items: center;
+  padding: 16px 6px;
+  gap: 16px;
+  text-decoration: none;
+}
+
+.hero .descripcion div a:last-child img {
+  background-color: white;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.hero .caracteristicas {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  gap: 72px;
+  width: 643px;
+}
+
+.hero .caracteristicas>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero .caracteristicas>div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero .caracteristicas>div div h3 {
+  font-size: 36px;
+  color: var(--dark-blue);
+  margin: 0;
+  font-weight: 500;
+}
+  
+.hero .caracteristicas>div div p {
+  font-size: 18px;
+  color: var(--gray2);
+  margin: 0;
+}
+
+.hero .comentarios {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 1309px;
+    top: 435px;
+    width: 545px;
+    gap: 65px;
+}
+
+.hero .comentarios div {
+  background-color: var(--white-blur);
+  display: flex;
+  flex-direction: column;
+  width: 405px;
+  box-sizing: border-box;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.hero .comentarios div:first-child {
+  margin-left: 140px;
+}
+
+.hero .comentarios>div img{
+  width: 32px;
+}
+
+.hero .comentarios>div p {
+  color: var(--black);
+  font-size: 18px;
+}
+
+.hero .comentarios>div h4 {
+  color: var(--dark-blue);
+  font-size: 18px;
+  margin: 0;
+}
+
+
+
+
+
