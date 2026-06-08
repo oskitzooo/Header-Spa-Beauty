@@ -4,7 +4,7 @@ Recreación pixel-perfect de un hero section para una página web de spa y belle
 
 ## 📸 Vista previa
 
-![Vista previa del proyecto](./screenshots/preview.png)
+![Vista previa del proyecto](./img/vistaPrevia.png)
 
 🔗 [Ver en vivo](https://oskitzooo.github.io/Header-Spa_Beauty)
 
