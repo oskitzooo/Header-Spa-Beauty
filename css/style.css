@@ -262,27 +262,36 @@ textarea {
   --white-blur: rgba(255, 255, 255, 0.5);
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--poppins-regular);
   background-image: 
-    url('../img/fondo-mujer.png'),
-    url('../img/spaLogo.svg'),
-    linear-gradient(to right, var(--gray) 65%, var(--cyan) 35%);
-  background-position: 300px -10px, 1172.25px 108.5px, 0 0;
-  background-size: 1650px 1150px, 472.5px 436.6px, 100% 820px;
-  background-repeat: no-repeat, no-repeat, no-repeat; 
+    url('../img/fondo-mujer.png'), url('../img/background.svg');
+  background-position: 225px -40px, top right;
+  background-size: 1340px 900px, 100% auto;
+  background-repeat: no-repeat, no-repeat; 
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 33px 0px; 
+  padding: 30px 0px; 
+  margin-bottom: 60px;
+  gap: 190px;
+}
+
+header nav {
+  margin-right: 80px;
 }
 
 header nav ul {
@@ -290,10 +299,11 @@ header nav ul {
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 28px;
 }
 
 header nav ul li a {
+  font-size: 14px;
   text-decoration: none;
   color: var(--dark-blue);
 }
@@ -301,26 +311,31 @@ header nav ul li a {
 header aside {
   display: flex;
   align-items: center;
-  gap: 66px; 
+  gap: 48px; 
 }
 
 header aside .iconos {
   display: flex;
-  gap: 32px; 
+  gap: 22px; 
 }
 
 header aside .registro {
   display: flex;
   align-items: center;
-  gap: 32px; 
+  gap: 22px; 
+}
+
+header aside .registro a:first-child {
+  font-size: 12px;
 }
 
 header aside .registro a+a {
   background-color: var(--dark-blue);
+  font-size: 12px;
   color: var(--white);
   text-decoration: none;
-  padding: 16px 40px;
-  border-radius: 32px;
+  padding: 10px 30px;
+  border-radius: 20px;
 }
 
 .hero{
@@ -328,45 +343,49 @@ header aside .registro a+a {
 }
 
 .hero .descripcion{
-  width: 809px;
-  margin-bottom: 90px;
+  width: 600px;
+  margin-bottom: 70px;
 }
 
 .hero .descripcion h1{
-  font-size: 64px;
+  font-size: 48px;
   color: var(--dark-blue);
+  margin-bottom: 28px;
 }
 
 .hero .descripcion p{
-  font-size: 24px;
+  font-size: 19px;
   color: var(--gray2);
+  margin-bottom: 42px;
 }
 
 .hero .descripcion div{
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 20px;
 }
 
 .hero .descripcion a:first-child {
+  font-size: 14px;
   text-decoration: none;
   color: var(--white);
   background-color: var(--dark-blue);
-  padding: 16px 40px;
-  border-radius: 32px;
+  padding: 14px 35px;
+  border-radius: 25px;
 }
 
 .hero .descripcion div a:last-child {
+  font-size: 14px;
   display: flex;
   align-items: center;
-  padding: 16px 6px;
-  gap: 16px;
+  padding: 10px 30px;
+  gap: 10px;
   text-decoration: none;
 }
 
 .hero .descripcion div a:last-child img {
   background-color: white;
-  padding: 8px;
+  padding: 6px;
   border-radius: 50%;
 }
 
@@ -375,75 +394,72 @@ header aside .registro a+a {
   align-items: center;
   text-align: center;
   background-color: white;
-  padding: 32px;
-  border-radius: 16px;
-  gap: 72px;
-  width: 643px;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 55px;
+  width: 500px;
 }
 
 .hero .caracteristicas>div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 18px;
 }
 
 .hero .caracteristicas>div div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
 }
 
 .hero .caracteristicas>div div h3 {
-  font-size: 36px;
+  font-size: 25px;
   color: var(--dark-blue);
   margin: 0;
   font-weight: 500;
 }
   
 .hero .caracteristicas>div div p {
-  font-size: 18px;
+  font-size: 14px;
   color: var(--gray2);
   margin: 0;
 }
 
 .hero .comentarios {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 1309px;
-    top: 435px;
-    width: 545px;
-    gap: 65px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 1000px;
+  top: 350px;
+  width: 400px;
+  gap: 50px;
 }
 
 .hero .comentarios div {
   background-color: var(--white-blur);
   display: flex;
   flex-direction: column;
-  width: 405px;
+  width: 340px;
   box-sizing: border-box;
-  padding: 24px;
+  padding: 20px;
   border-radius: 16px;
+  gap: 10px;
 }
 
 .hero .comentarios div:first-child {
   margin-left: 140px;
 }
 
-.hero .comentarios>div img{
-  width: 32px;
-}
-
 .hero .comentarios>div p {
   color: var(--black);
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .hero .comentarios>div h4 {
   color: var(--dark-blue);
-  font-size: 18px;
+  font-size: 14px;
   margin: 0;
 }
 
